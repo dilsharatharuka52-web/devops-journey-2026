@@ -1,27 +1,45 @@
-## 🔹 My DevOps Journey (Day-by-Day)
-I document my **DevOps learning and experiments daily** on GitHub.  
-From Linux fundamentals to cloud automation and AI infrastructure, here’s a peek into my journey:
+# 🚀 DevOps → AI Platform Engineer Journey
 
-# DevOps → AI Platform Engineer Journey
-
-This repository documents my journey from DevOps fundamentals to AI Platform Engineering.
+Welcome! I'm **Tharuka Dilshara**, and this is my public journey from DevOps fundamentals to AI Infrastructure Engineering.
 
 ---
 
-## 📅 Day 1 – Foundation (Completed ✅)
+## 🎯 My Goal
+- Build real-world systems on **Linux, Cloud, Kubernetes, Docker, MLOps, GPU infrastructure**
+- Learn by **doing and documenting publicly**
+- Share knowledge through **labs, blogs, and GitHub projects**
 
-### ✅ What I Did
-- Defined career goal: **DevOps → AI Platform Engineer**
-- Created core platforms:
-  - GitHub
-  - LinkedIn
-  - Notion (AI Ops OS)
-- Designed documentation system in Notion:
-  - Daily Log
-  - Labs
-  - GPU Configs
-  - Blog
-  - Certificates
+---
 
-### 🧠 Key Learning
-DevOps is not about tools first — it is about systems, documentation, and consistency.
+## 📅 Progress Highlights
+
+| Day | Focus | Status |
+|-----|-------|--------|
+| 1 | Define goal, Notion & GitHub setup | ✅ Completed |
+| 2 | Home lab architecture, Ubuntu Server install, SSH & networking | ✅ Completed |
+| 3 | Users & permissions, SSH hardening, firewall basics | Planned |
+| 4 | Docker fundamentals | Planned |
+| 5 | Kubernetes basics | Planned |
+
+> Daily updates and logs will be posted in this repo.
+
+---
+
+## 🧪 Labs
+Hands-on experiments are documented here: [Labs Directory](./labs)
+
+---
+
+## ✍️ Blog
+Read my journey: [Blog Directory](./blog)
+
+---
+
+## 📌 Philosophy
+> Learn deeply. Build honestly. Document publicly.
+
+---
+
+## 📬 Contact
+- LinkedIn: [Tharuka Dilshara](https://www.linkedin.com/in/tharuka-dilshara)
+- Email: your-email@example.com
