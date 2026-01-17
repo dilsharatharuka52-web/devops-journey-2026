@@ -25,10 +25,3 @@ This repository documents my journey from DevOps fundamentals to AI Platform Eng
 
 ### 🧠 Key Learning
 DevOps is not about tools first — it is about systems, documentation, and consistency.
-
----
-
-## 🔜 Next Step
-**Day 2:** Linux fundamentals for DevOps engineers
-
-> Learn deeply. Build honestly. Document publicly.
