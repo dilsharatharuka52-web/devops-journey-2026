@@ -121,7 +121,7 @@ Hi! I’m **Tharuka Dilshara**, documenting my journey from **DevOps → AI Plat
 ## 🔗 Quick Links
 - **Labs:** [./labs](./labs)  
 - **Blog:** [./blog](./blog)  
-- **Notion:** [AI Ops OS](https://www.notion.so/)  
+- **Notion:** [AI Ops OS](https://www.notion.so/Life-OS-Tharuka-Dilshara-2e0d9ad4874080d4a9e6f8f5a0d7449e?source=copy_link)  
 - **LinkedIn:** [Tharuka Dilshara](https://www.linkedin.com/in/tharuka-dilshara)
 
 ---
