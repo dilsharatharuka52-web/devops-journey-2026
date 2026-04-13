@@ -1,0 +1,16 @@
+## Hardening Checklist
+- [ ] Disable SSH root login
+- [ ] Disable SSH password authentication
+- [ ] Set AllowUsers in SSH config
+- [ ] Change SSH default port (optional)
+- [ ] Enable UFW firewall
+- [ ] Allow only SSH, HTTP, HTTPS through firewall
+- [ ] Deny all other incoming traffic
+- [ ] Enable UFW on boot
+- [ ] Install and configure fail2ban
+- [ ] Enable fail2ban service
+- [ ] Install unattended-upgrades
+- [ ] Enable automatic security updates
+- [ ] Disable unused services (cups, avahi)
+- [ ] Set correct permissions on sensitive files
+- [ ] Add colored output and dry-run flag
