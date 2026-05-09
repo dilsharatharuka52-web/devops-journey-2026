@@ -68,11 +68,11 @@ If you are also starting from scratch — follow along. Everything I learn goes 
 - [x] Variables & Data Types — int, float, str, bool, f-strings, type conversion
 - [x] Collections — list, dict, tuple, set · when to use each
 - [x] Control Flow — if/elif/else, for, while, break, continue, range()
-- [ ] Functions & Scope — def, return, args, default values, *args
-- [ ] File I/O — open(), with, json, csv, pathlib
-- [ ] Error Handling — try/except/finally, custom exceptions
+- [X] Functions & Scope — def, return, args, default values, *args
+- [X] File I/O — open(), with, json, csv, pathlib
+- [X] Error Handling — try/except/finally, custom exceptions
 - [ ] OOP — classes, methods, __init__, self
-- [ ] List Comprehensions + map/filter
+- [X] List Comprehensions + map/filter
 - [ ] venv + pip + requirements.txt
 
 #### Days 31–60: Practical + Real-World Python
