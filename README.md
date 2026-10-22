@@ -52,21 +52,21 @@
 **Status:** Almost complete
 
 ### Checklist
-- [ ] Define clear goal: DevOps + MLOps Engineer by 2028
-- [ ] Create accounts: GitHub, LinkedIn, Medium/Dev.to
-- [ ] Build Notion/Obsidian workspace (Daily Log, Project Tracker, Resources)
-- [ ] Honest skills assessment
-- [ ] Join communities (r/devops, CNCF Slack, Platform Engineering Discord)
-- [ ] Plan hardware / home lab
-- [ ] Choose Proxmox vs Ubuntu 24.04 vs cloud lab
-- [ ] Network diagram (Excalidraw / Draw.io)
-- [ ] Create Git repo: `homelab-infrastructure`
-- [ ] Document Architecture Decision Records (ADRs)
-- [ ] Install Ubuntu 24.04 LTS
-- [ ] SSH hardening (key-based auth, disable root, fail2ban)
-- [ ] Static IP, DNS, essential tools (htop, tmux, neovim)
-- [ ] First blog post: “Why I am becoming a Platform Engineer in 2026”
-- [ ] **Project #2** – Home Lab Documentation Site (MkDocs or Hugo)
+- [x] Define clear goal: DevOps + MLOps Engineer by 2028
+- [x] Create accounts: GitHub, LinkedIn, Medium/Dev.to
+- [x] Build Notion/Obsidian workspace (Daily Log, Project Tracker, Resources)
+- [x] Honest skills assessment
+- [x] Join communities (r/devops, CNCF Slack, Platform Engineering Discord)
+- [x] Plan hardware / home lab
+- [x] Choose Proxmox vs Ubuntu 24.04 vs cloud lab
+- [x] Network diagram (Excalidraw / Draw.io)
+- [x] Create Git repo: `homelab-infrastructure`
+- [x] Document Architecture Decision Records (ADRs)
+- [x] Install Ubuntu 24.04 LTS
+- [x] SSH hardening (key-based auth, disable root, fail2ban)
+- [x] Static IP, DNS, essential tools (htop, tmux, neovim)
+- [x] First blog post: “Why I am becoming a Platform Engineer in 2026”
+- [x] **Project #2** – Home Lab Documentation Site (MkDocs or Hugo)
 
 ---
 
