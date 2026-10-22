@@ -1,0 +1,590 @@
+# **22-Month Realistic Roadmap — 2026 Edition**
+
+Updated for Complete Beginners | AI + Infrastructure Track
+
+Created: 2026  |  660 Days  |  50+ Projects
+
+## **Why This Roadmap Was Updated**
+
+**The original 18-month roadmap was excellent — but it was designed for someone who already has basic programming experience. If you are a complete beginner, Phase 3 (Programming) comes too late and is too short. Arriving at Python, Go, Kafka, and ML pipelines without any coding foundation is where most people quit.**
+
+**This updated version adds Phase 0.5 (Python Foundations) before everything else, expands Phase 3 significantly, and adds deeper ML/AI content in Phase 7. The total time increases from 540 to 660 days — but you will be genuinely job-ready, not just certificate-ready.**
+
+**Roadmap at a Glance**
+
+| **Phase** | **Focus** | **Days** | **Key Output** |
+| --- | --- | --- | --- |
+| 0 | Foundation & Mindset | 1–15 | Home lab, accounts, plan |
+| **0.5 NEW** | Python Foundations | 16–75 | 10 real Python projects |
+| 1 | Linux & Bash Mastery | 76–145 | 6 automation projects |
+| 2 | Containers & Observability | 146–215 | GPU ML environment |
+| **3 EXPANDED** | Programming Deep Dive | 216–345 | Python + Go + Data + ML |
+| Buffer | Consolidation weeks x3 | Various | Refactor, blog, catch up |
+| 4 | IaC, CI/CD & GitOps | 346–415 | Full automated infra |
+| 5 | Cloud Platforms & FinOps | 416–480 | Cloud certs, cost dashboards |
+| 6 | Kubernetes & Security | 481–555 | CKA certification |
+| **7 EXPANDED** | AI Infrastructure & MLOps | 556–640 | Capstone AI platform |
+| 8 | Job Hunt & Brand | 641–660 | Job offers |
+
+PHASE 0 — Foundation & Mindset  |  Days 1–15
+
+---
+
+| **Duration** | 15 days |
+| --- | --- |
+| **Daily commitment** | 1–2 hours |
+| **Goal** | Set up environment, define your target, build learning habits |
+
+**Days 1–5: Setup & Career Planning**
+
+- ~~Define clear goal: DevOps + MLOps Engineer by 2028~~
+- ~~Create accounts: GitHub, LinkedIn, Medium/Dev.to~~
+- ~~Build Notion or Obsidian workspace: Daily Log, Project Tracker, Resources~~
+- ~~Honest skills assessment: What do you know? What gaps exist?~~
+- ~~Join communities: r/devops, CNCF Slack, Platform Engineering Discord~~
+
+**Days 6–10: Home Lab Architecture**
+
+- ~~Plan hardware: Primary workstation + secondary server (VM-based is fine)~~
+- ~~Choose: Proxmox vs bare-metal Ubuntu 24.04 LTS vs cloud lab~~
+- ~~Network diagram using Excalidraw or Draw.io~~
+- ~~Create Git repo: homelab-infrastructure~~
+- ~~Document Architecture Decision Records (ADRs) for your choices~~
+
+**Days 11–15: Initial Infrastructure**
+
+- ~~Install Ubuntu 24.04 LTS~~
+- ~~SSH hardening: key-based auth, disable root, fail2ban~~
+- ~~Static IP, DNS setup, essential tools: htop, tmux, neovim~~
+- ~~First blog post: Why I am becoming a Platform Engineer in 2026~~
+
+**Phase 0 Projects**
+
+- ~~Project 1: Automated Linux Hardening Script~~
+- Project 2: Home Lab Documentation Site with MkDocs or Hugo
+
+PHASE 0.5 (NEW) — Python Foundations  |  Days 16–75
+
+---
+
+This phase did not exist in the original roadmap. It is added specifically because you are a complete beginner. Do not skip it. Every phase that follows — Linux scripting, Docker configs, Kubernetes operators, ML pipelines — becomes dramatically easier once you can think programmatically.
+
+| **Duration** | 60 days |
+| --- | --- |
+| **Daily commitment** | 2 hours coding + 30 min theory |
+| **Language** | Python only — do not touch Go yet |
+| **Goal** | Build 10 real projects, get comfortable reading and writing code |
+
+**Days 16–30: Core Python**
+
+- ~~Variables, data types: strings, integers, floats, booleans~~
+- ~~Lists, tuples, dictionaries, sets — and when to use each~~
+- ~~Control flow: if/elif/else, for loops, while loops~~
+- ~~Functions: defining, calling, arguments, return values~~
+- ~~Scope, mutability — understanding WHY Python works the way it does~~
+- ~~Use: Python.org official tutorial + freeCodeCamp Python course~~
+
+**Days 31–45: Practical Python**
+
+- ~~File I/O: reading, writing, appending files~~
+- ~~Error handling: try/except/finally, custom exceptions~~
+- ~~Modules and imports: os, sys, pathlib, datetime, json, csv~~
+- ~~List comprehensions and basic functional tools: map, filter~~
+- Basic Object-Oriented Programming: classes, methods, __init__
+- pip, virtual environments (venv) — isolating your projects
+
+**Days 46–60: Real-World Python**
+
+- HTTP requests with requests library — call real public APIs
+- Parsing JSON responses, handling errors gracefully
+- Working with environment variables and .env files
+- Writing simple command-line tools with argparse or click
+- Introduction to pytest — writing your first tests
+- structlog for structured logging — a DevOps essential
+- Subprocess
+
+**Days 61–75: Python Mini Projects**
+
+- Build 10 real projects — these go on your GitHub immediately
+- Project 1: System info reporter — CPU, memory, disk usage printed to terminal
+- Project 2: File organiser — moves files into folders by extension automatically
+- Project 3: Weather CLI — fetches real weather from a free API
+- Project 4: CSV data cleaner — reads messy CSV, outputs clean version
+- Project 5: Simple web scraper — extracts data from a public website
+- Project 6: Password generator — CLI tool with options for length and complexity
+- Project 7: Log parser — reads a log file, counts errors, generates a report
+- Project 8: GitHub repo lister — calls GitHub API, lists your repos
+- Project 9: Expense tracker — reads transactions from CSV, calculates totals
+- Project 10: Automated file backup — copies files, adds timestamps, cleans old backups
+
+**Phase 0.5 Deliverables**
+
+- 10 Python projects on GitHub with READMEs
+- Comfortable reading and writing Python without looking up basic syntax
+- Blog post: 10 Python projects I built as a complete beginner
+
+PHASE 1 — Linux Mastery & Scripting  |  Days 76–145
+
+---
+
+Now that you think programmatically, Linux and Bash will click much faster. You will understand WHY commands work, not just memorise them.
+
+| **Duration** | 70 days |
+| --- | --- |
+| **Daily commitment** | 2 hours hands-on + 30 min theory |
+| **Goal** | Production Linux skills, 6 automation projects |
+
+**Days 76–90: System Fundamentals**
+
+- Boot process: GRUB, systemd deep dive, targets and runlevels
+- File systems: ext4, xfs, Btrfs, LVM partitioning
+- Understanding /proc, /sys virtual filesystems
+- Users and groups, permissions: chmod, chown, ACLs
+- Package management: apt, snap, flatpak best practices
+
+**Days 91–110: Process Management & Performance**
+
+- Process lifecycle: fork, exec, signals, zombies
+- systemd services: create custom units for applications
+- Performance tools: top, htop, iotop, iostat, vmstat, sar
+- Log management: journalctl, rsyslog, logrotate
+- Cron jobs and systemd timers for automation
+
+**Days 111–125: Networking & Security**
+
+- TCP/IP fundamentals, OSI model practical application
+- Tools: tcpdump, netstat, ss, traceroute, iperf
+- Firewall: UFW/iptables rules, port management
+- VPN setup: WireGuard configuration
+- DNS deep dive: bind9, dnsmasq, /etc/hosts
+
+**Days 126–145: Bash Scripting Mastery**
+
+- Advanced bash: functions, arrays, error handling, exit codes
+- Build automation scripts: system monitoring, backups, deployments
+- Parse logs and generate reports — combining Python + Bash
+- Create reusable script library for DevOps tasks
+- Blog post: Building production-ready Bash scripts
+
+**Phase 1 Projects (Projects 3–8)**
+
+- Project 3: System Health Monitoring Dashboard
+- Project 4: Automated Backup Solution with Rotation
+- Project 5: Log Analysis and Alert Script
+- Project 6: Custom systemd Service for Application Management
+- Project 7: Network Performance Testing Suite
+- Project 8: Bash-based DevOps CLI Toolkit
+
+PHASE 2 — Containers, GPU & Observability  |  Days 146–215
+
+---
+
+| **Duration** | 70 days |
+| --- | --- |
+| **Daily commitment** | 2 hours hands-on + 30 min theory |
+| **Goal** | Containerised apps, GPU ML environment, production monitoring |
+
+**Days 146–163: Docker Fundamentals**
+
+- Docker architecture: daemon, client, registry, layers
+- Images vs containers: building efficient images
+- Multi-stage builds for production (reduce image size 60–80%)
+- Volumes: bind mounts, named volumes, tmpfs
+- Networks: bridge, host, overlay, custom networks
+- Docker Compose for multi-container applications
+
+**Days 164–178: GPU & AI Containers**
+
+- NVIDIA Container Toolkit installation and configuration
+- GPU runtime orchestration with Docker
+- Deploy local LLM: Ollama, llama.cpp in containers
+- Resource limits: CPU, memory, GPU allocation
+- Container registries: Docker Hub, GHCR, private registry setup
+
+**Days 179–200: Observability Foundations**
+
+- Install Prometheus + Grafana stack from scratch
+- Metrics collection: node_exporter, cAdvisor
+- GPU metrics: NVIDIA DCGM Exporter
+- Create dashboards for system, container, and GPU health
+- Alertmanager: configure alerts and notification channels
+- Loki for log aggregation — the full observability stack
+
+**Days 201–215: Advanced Container Projects**
+
+- Full stack deployment: Nginx + PostgreSQL + Redis + MinIO
+- Dev Containers with VSCode for consistent environments
+- Health checks and restart policies
+- Security scanning: Trivy, Grype for vulnerabilities
+
+**Phase 2 Projects (Projects 9–15)**
+
+- Project 9: Multi-stage Python/Node.js Docker Build
+- Project 10: Docker Compose Full-Stack App
+- Project 11: Private Docker Registry Setup
+- Project 12: GPU-Accelerated Container Application
+- Project 13: Prometheus + Grafana Monitoring Stack
+- Project 14: Container Vulnerability Scanning Pipeline
+- Project 15: Self-Hosted AI Chat Platform with Ollama
+
+PHASE 3 (EXPANDED) — Programming Deep Dive  |  Days 216–345
+
+---
+
+This phase is significantly expanded from the original 67 days to 130 days. As a beginner targeting both MLOps and DevOps, you need real depth in Python — including data handling and ML basics — not just enough to write a script.
+
+| **Duration** | 130 days (was 67 in original) |
+| --- | --- |
+| **Daily commitment** | 2–3 hours coding + 30 min theory |
+| **Goal** | Python automation + Go CLI tools + Data + ML fundamentals |
+| **NEW additions** | NumPy, Pandas, PyTorch basics, HuggingFace, LangChain |
+
+**Days 216–250: Python for Platform Engineering (Original Content)**
+
+- FastAPI: build REST APIs for infrastructure management
+- Boto3/cloud SDKs: automate AWS/Azure/GCP operations
+- Async programming: asyncio, aiohttp for scalable apps
+- File processing: CSV, JSON, YAML parsing and transformation
+- Error handling, logging (structlog), retries with tenacity
+- Testing: pytest, mocking, test coverage with coverage.py
+
+**Days 251–275: Data Foundations (NEW — Critical for MLOps)**
+
+- NumPy: arrays, operations, broadcasting — the foundation of all ML
+- Pandas: DataFrames, filtering, groupby, merging, cleaning data
+- Matplotlib and Seaborn: visualising data to understand it
+- Working with real datasets: CSV, JSON, Parquet, HDF5 formats
+- Data pipelines: reading, transforming, validating, writing data
+- Project: Build a data quality checker for ML training datasets
+
+**Days 276–305: ML Fundamentals (NEW — Critical for MLOps)**
+
+- What machine learning actually is — intuition before code
+- Scikit-learn: training classifiers, regressors, evaluating models
+- Key metrics: accuracy, precision, recall, F1, confusion matrix, AUC-ROC
+- PyTorch basics: tensors, autograd, a simple neural network from scratch
+- HuggingFace Transformers: loading and using pre-trained models
+- Running inference locally: text classification, embeddings, generation
+- Project: End-to-end ML pipeline from raw data to deployed model
+
+**Days 306–320: LLM Fundamentals (NEW — Critical for LLMOps)**
+
+- How large language models work at a conceptual level
+- OpenAI and Anthropic SDKs: calling models from Python
+- Prompt engineering: system prompts, few-shot, chain-of-thought
+- LangChain basics: chains, agents, tool calling
+- Vector embeddings: what they are and why they matter for search
+- Building a simple RAG (Retrieval Augmented Generation) application
+- Project: LLM-powered document Q&A tool with Python
+
+**Days 321–345: Go for Cloud-Native Tools (Original Content)**
+
+- Go fundamentals: syntax, types, structs, interfaces
+- Concurrency: goroutines, channels, select statements
+- Build CLI tools with cobra and viper
+- Work with Kubernetes client-go library
+- HTTP servers and REST APIs in Go
+- Project: Kubernetes operator or admission controller
+
+**Phase 3 Projects (Projects 16–23)**
+
+- Project 16: Infrastructure API with FastAPI
+- Project 17: Cloud Resource Automation with Boto3 or Azure SDK
+- Project 18: Data Quality Checker for ML Datasets (NEW)
+- Project 19: End-to-End ML Pipeline with Monitoring (NEW)
+- Project 20: LLM-Powered Document Q&A Tool (NEW)
+- Project 21: Real-time Log Processing with Kafka
+- Project 22: CLI Tool for Cluster Management in Go
+- Project 23: Vector Database RAG Application
+
+PHASE 4 — IaC, CI/CD & GitOps  |  Days 346–415
+
+---
+
+| **Duration** | 70 days |
+| --- | --- |
+| **Daily commitment** | 2 hours hands-on + 30 min theory |
+| **Goal** | Fully automated infrastructure, GitOps-managed applications |
+
+**Days 346–363: Infrastructure as Code**
+
+- Terraform/OpenTofu: resources, modules, state management
+- Workspaces for multi-environment deployments
+- Remote state: S3/Azure Blob + state locking
+- Terraform testing: terratest, terraform validate, tflint
+- Crossplane: Kubernetes-native infrastructure provisioning
+- Policy as Code: OPA, Sentinel for compliance
+
+**Days 364–381: CI/CD Pipelines**
+
+- GitHub Actions: workflows, triggers, matrix strategies
+- GitLab CI/CD: .gitlab-ci.yml, runners, environments
+- Build and push Docker images automatically
+- Automated testing in pipelines: unit, integration, e2e
+- Secrets management: GitHub/GitLab secrets, external secret operators
+- Artifact versioning and release automation
+
+**Days 382–400: GitOps Implementation**
+
+- GitOps principles: declarative, versioned, immutable
+- ArgoCD: installation, app deployment, sync strategies
+- FluxCD: GitOps Toolkit, kustomize integration
+- Progressive delivery: canary, blue-green with Argo Rollouts
+- Multi-cluster management with ArgoCD ApplicationSets
+
+**Days 401–415: Configuration Management**
+
+- Ansible: playbooks, roles, inventory, variables
+- Jinja2 templating for dynamic configs
+- Ansible Vault for secrets
+- Idempotency best practices
+- Integration with Terraform for complete IaC solution
+
+**Phase 4 Projects (Projects 24–30)**
+
+- Project 24: Multi-Environment Terraform Infrastructure
+- Project 25: GitHub Actions CI/CD Pipeline
+- Project 26: GitLab CI with Auto DevOps
+- Project 27: ArgoCD GitOps Deployment
+- Project 28: Canary Deployment with Argo Rollouts
+- Project 29: Ansible Automation for System Configuration
+- Project 30: Complete IaC Solution combining Terraform and Ansible
+
+PHASE 5 — Cloud Platforms & FinOps  |  Days 416–480
+
+---
+
+| **Duration** | 65 days |
+| --- | --- |
+| **Daily commitment** | 2 hours hands-on + 1 hour cert study |
+| **Goal** | Cloud certifications, cost dashboards, multi-cloud expertise |
+
+**Days 416–448: Multi-Cloud Mastery**
+
+- Azure: Entra ID, VNETs, NSGs, N-Series GPU VMs, AKS
+- Azure: Blob Storage, Key Vault, Monitor, Cost Management
+- AWS: EC2 (P/G instances), S3, IAM, VPC, EKS
+- AWS: Lambda, CloudWatch, Cost Explorer
+- GCP: Compute Engine, GCS, GKE, Cloud Functions
+- Multi-cloud strategy: when to use which provider
+- Cloud-native design patterns: 12-factor apps, event-driven architecture
+
+**Days 449–463: FinOps Implementation**
+
+- Cost optimisation fundamentals: right-sizing, reserved instances, spot instances
+- Infracost: preview costs in pull requests before deploying
+- Cloud cost dashboards: Prometheus + Grafana for cost metrics
+- Tagging strategies for cost allocation across teams
+- Budget alerts and automated cost controls
+- Show cost impact in every infrastructure change — make it a habit
+
+**Days 464–480: Certifications**
+
+- AZ-104 Azure Administrator: study and practice labs
+- AZ-400 DevOps Engineer: focus on pipelines and IaC
+- Or AWS Solutions Architect Associate + DevOps Engineer Professional
+- Practice exams and hands-on labs — do not just read, do the labs
+- Schedule and pass certifications before moving to Phase 6
+
+**Phase 5 Projects (Projects 31–36)**
+
+- Project 31: Multi-Region Azure Deployment
+- Project 32: AWS Serverless Application with Lambda and API Gateway
+- Project 33: GCP Data Pipeline with Pub/Sub and Cloud Functions
+- Project 34: Cost Optimisation Dashboard
+- Project 35: Infracost Integration in CI/CD
+- Project 36: Multi-Cloud Application Deployment
+
+PHASE 6 — Kubernetes & Security  |  Days 481–555
+
+---
+
+| **Duration** | 75 days |
+| --- | --- |
+| **Daily commitment** | 2–3 hours hands-on + 1 hour CKA prep |
+| **Goal** | CKA certification, production-hardened K8s cluster |
+
+**Days 481–510: Kubernetes Deep Dive**
+
+- Deploy production-grade K3s/kubeadm cluster
+- Core resources: Pods, Deployments, StatefulSets, DaemonSets
+- Services: ClusterIP, NodePort, LoadBalancer, ExternalName
+- ConfigMaps and Secrets management
+- Persistent Volumes: storage classes, dynamic provisioning
+- Ingress: Nginx/Traefik for traffic routing
+- Resource management: limits, requests, QoS classes
+- Helm: charts, repositories, templating
+- Kustomize for environment-specific configs
+
+**Days 511–528: Security & Compliance**
+
+- RBAC: Roles, ClusterRoles, ServiceAccounts, RoleBindings
+- Pod Security Standards: restricted, baseline, privileged
+- Network Policies for pod-to-pod security
+- Secrets encryption at rest with KMS
+- External Secrets Operator: integration with Vault, AWS Secrets Manager
+- Admission controllers: OPA, Kyverno for policy enforcement
+- Container image signing: Cosign, Notary
+- SBOM generation and vulnerability scanning
+
+**Days 529–545: Advanced K8s & Service Mesh**
+
+- HPA, VPA, KEDA for event-driven scaling
+- Istio/Linkerd: service mesh for mTLS, observability, traffic management
+- Advanced networking: CNI plugins — Cilium, Calico
+- Cluster autoscaling: Karpenter for just-in-time node provisioning
+- Multi-cluster management: Cluster API, Karmada
+
+**Days 546–555: CKA Certification**
+
+- Certified Kubernetes Administrator exam preparation
+- killer.sh simulator intensive practice — do it twice
+- Time-based troubleshooting drills
+- Cluster recovery scenarios
+- Schedule and pass CKA
+
+**Phase 6 Projects (Projects 37–43)**
+
+- Project 37: Production K3s/K8s Cluster
+- Project 38: Microservices Deployment on K8s
+- Project 39: Helm Chart Development
+- Project 40: RBAC and Security Policies Implementation
+- Project 41: Service Mesh with Istio or Linkerd
+- Project 42: External Secrets Integration
+- Project 43: Automated Cluster Scaling with Karpenter
+
+PHASE 7 (EXPANDED) — AI Infrastructure & Platform Engineering  |  Days 556–640
+
+---
+
+This phase is now much more achievable because you built real ML and LLM foundations in Phase 3. You are not learning what a transformer is here — you are learning how to run them at scale.
+
+| **Duration** | 85 days (was 77 in original) |
+| --- | --- |
+| **Daily commitment** | 2–3 hours hands-on + research |
+| **Goal** | Production AI platform as portfolio centrepiece |
+
+**Days 556–578: GPU Orchestration & LLM Serving**
+
+- NVIDIA GPU Operator on Kubernetes
+- GPU time-slicing and MIG — Multi-Instance GPU
+- DCGM Exporter: GPU metrics to Prometheus
+- Deploy Triton Inference Server or vLLM for model serving
+- Model caching and batching strategies for throughput
+- Latency/throughput optimisation for LLM inference
+- Token cost tracking and prompt logging
+
+**Days 579–598: Vector Databases & Real-time Pipelines**
+
+- Deploy Milvus, Weaviate, or Qdrant on Kubernetes
+- Embeddings, indexing, similarity search at scale
+- Kafka/Redis for streaming ML pipelines
+- Real-time feature stores: Feast, Tecton
+- Advanced RAG architecture with re-ranking and hybrid search
+- Agent systems and multi-step tool integration
+
+**Days 599–618: Platform Engineering**
+
+- Build Internal Developer Platform (IDP) with Backstage.io
+- Golden paths: pre-configured templates for common workflows
+- Self-service infrastructure: developer portal for resource requests
+- Plugin development: custom Backstage plugins
+- Platform API design: abstract complexity for developers
+- DevEx metrics: measure developer productivity and satisfaction
+
+**Days 619–640: MLOps & Capstone Project**
+
+- Kubeflow or MLflow pipelines for training automation
+- Model versioning and experiment tracking
+- CI/CD for ML: training pipeline automation
+- Model monitoring: drift detection, performance degradation
+
+**CAPSTONE — Production AI Platform**
+
+- LLM inference service with vLLM or Triton
+- Vector database for RAG with real documents
+- User-facing API with FastAPI and a simple web UI
+- Full monitoring: Prometheus, Grafana, Loki, DCGM
+- Auto-scaling based on request demand
+- Cost tracking: token costs, GPU utilisation, FinOps dashboard
+- Invite 10+ beta testers, gather real feedback
+- Record a demo video for your portfolio
+
+**Phase 7 Projects (Projects 44–50)**
+
+- Project 44: GPU-Accelerated Kubernetes Cluster
+- Project 45: LLM Inference Service with vLLM or Triton
+- Project 46: Vector Database RAG System with Advanced Search
+- Project 47: Real-time ML Pipeline with Kafka
+- Project 48: Backstage IDP Implementation
+- Project 49: MLOps Pipeline with Kubeflow or MLflow
+- Project 50: CAPSTONE — Production AI Platform
+
+PHASE 8 — Job Hunt & Personal Brand  |  Days 641–660
+
+---
+
+| **Duration** | 20 days |
+| --- | --- |
+| **Daily commitment** | Full day: applications + content + interviews |
+| **Target roles** | MLOps Engineer, Platform Engineer, DevOps Engineer (AI) |
+| **Salary target** | $120,000 – $180,000 depending on location |
+
+**Days 641–648: Portfolio & Resume**
+
+- GitHub profile: pinned repos, README showcase, contribution graph
+- Portfolio website: top 10 projects with case studies and live demos
+- Resume focused on: Platform Engineering, Kubernetes, GPU orchestration
+- Quantify everything: 40% cost reduction, deployment time cut by 60%
+- LinkedIn optimisation: skills, endorsements, recommendations
+
+**Days 649–655: Content & Networking**
+
+- Publish all blog posts on Medium, Dev.to, Hashnode
+- LinkedIn posts 3x per week: DevOps, Platform Engineering, AI infrastructure
+- Create demo videos of top projects for YouTube
+- Open source contributions: fix bugs, add features to popular DevOps tools
+- Attend virtual conferences: KubeCon, DevOps Days, Platform Engineering
+
+**Days 656–660: Active Job Search**
+
+- Target: AI/ML Platform Engineer, MLOps Engineer, Platform Engineer/SRE
+- 5–10 quality applications per day with customised resumes
+- Mock interviews: system design, behavioural, Kubernetes troubleshooting
+- Salary negotiation prep: research market rates, prepare your case
+- Network actively: recruiters, hiring managers, community members
+
+**Certifications Roadmap**
+
+| **Certification** | **Phase** | **Priority** | **Notes** |
+| --- | --- | --- | --- |
+| CKA — Kubernetes Administrator | Phase 6 | Must-have | Highest ROI cert for your targets |
+| AZ-104 — Azure Administrator | Phase 5 | High | Good for cloud credibility |
+| AZ-400 — DevOps Engineer | Phase 5 | High | Pairs well with AZ-104 |
+| AWS SAA — Solutions Architect | Phase 5 | Medium | If targeting AWS-heavy roles |
+| CKAD — Kubernetes Developer | Post-Phase 6 | Bonus | Add after CKA if time allows |
+| CKS — Kubernetes Security | Post-Phase 6 | Bonus | Great for security-focused roles |
+
+**Success Metrics After 22 Months**
+
+- 50+ completed projects (10 Python beginner + 15 intermediate + 15 advanced + 10 AI)
+- Certifications: CKA required, AZ-104, AZ-400 strongly recommended
+- 12+ blog posts, consistent LinkedIn presence, YouTube project demos
+- Core skills: Python, Kubernetes, Platform Engineering, GPU orchestration, MLOps, IaC, FinOps
+- Capstone: Production-grade AI platform with real users and testimonials
+- 500+ LinkedIn connections, active in 5+ DevOps communities
+- Interview-ready for senior Platform Engineer and MLOps Engineer roles
+
+**Key Execution Tips**
+
+- Do not skip Phase 0.5 — it is the most important addition to your roadmap
+- Weekly review every Sunday: assess progress, adjust plan, prepare next week
+- Document everything: write blog posts as you learn, not after — it reinforces learning
+- Buffer weeks exist for catching up — use them, do not feel guilty
+- Depth beats breadth: master Kubernetes before chasing every new tool
+- Public learning: share your journey on LinkedIn from day one
+- Health: sustainable pace beats burnout — rest days are part of the plan
+- Ask for help: communities are there to support you
+- Celebrate wins: completed a project? Share it. Got certified? Announce it.
+
+DevOps + MLOps Roadmap 2026  |  Updated for Complete Beginners  |  660 Days  |  50+ Projects
