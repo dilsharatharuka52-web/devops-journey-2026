@@ -74,12 +74,12 @@
 **Goal:** 10 real projects on GitHub + comfortable reading/writing Python
 
 ### Core Python
-- [ ] Variables, data types
-- [ ] Lists, tuples, dictionaries, sets
-- [ ] Control flow (if/elif/else, for, while)
-- [ ] Functions
-- [ ] Scope & mutability
-- [ ] Official Python tutorial + freeCodeCamp course
+- [x] Variables, data types
+- [x] Lists, tuples, dictionaries, sets
+- [x] Control flow (if/elif/else, for, while)
+- [x] Functions
+- [x] Scope & mutability
+- [x] Official Python tutorial + freeCodeCamp course
 
 ### Practical Python
 - [ ] File I/O
