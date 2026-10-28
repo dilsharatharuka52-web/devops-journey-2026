@@ -82,12 +82,12 @@
 - [x] Official Python tutorial + freeCodeCamp course
 
 ### Practical Python
-- [ ] File I/O
-- [ ] Error handling (try/except)
-- [ ] Modules (os, sys, pathlib, datetime, json, csv)
+- [x] File I/O
+- [x] Error handling (try/except)
+- [x] Modules (os, sys, pathlib, datetime, json, csv)
 - [ ] List comprehensions, map, filter
 - [ ] Basic OOP (classes, methods, `__init__`)
-- [ ] pip + virtual environments (venv)
+- [x] pip + virtual environments (venv)
 
 ### Real-World Python
 - [ ] HTTP requests (`requests`)
