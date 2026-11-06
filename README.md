@@ -85,23 +85,23 @@
 - [x] File I/O
 - [x] Error handling (try/except)
 - [x] Modules (os, sys, pathlib, datetime, json, csv)
-- [ ] List comprehensions, map, filter
-- [ ] Basic OOP (classes, methods, `__init__`)
+- [x] List comprehensions, map, filter
+- [x] Basic OOP (classes, methods, `__init__`)
 - [x] pip + virtual environments (venv)
 
 ### Real-World Python
-- [ ] HTTP requests (`requests`)
-- [ ] Parsing JSON + error handling
-- [ ] Environment variables + `.env`
-- [ ] CLI tools (argparse or click)
-- [ ] pytest (first tests)
+- [x] HTTP requests (`requests`)
+- [x] Parsing JSON + error handling
+- [x] Environment variables + `.env`
+- [x] CLI tools (argparse or click)
+- [] pytest (first tests)
 - [ ] structlog
-- [ ] subprocess
+- [x] subprocess
 
 ### Python Mini Projects (Must complete all 10)
 - [ ] #1 System info reporter (CPU, memory, disk)
 - [ ] #2 File organiser (by extension)
-- [ ] #3 Weather CLI (free API)
+- [x] #3 Weather CLI (free API)
 - [ ] #4 CSV data cleaner
 - [ ] #5 Simple web scraper
 - [ ] #6 Password generator CLI
