@@ -94,19 +94,19 @@
 - [x] Parsing JSON + error handling
 - [x] Environment variables + `.env`
 - [x] CLI tools (argparse or click)
-- [] pytest (first tests)
-- [ ] structlog
+- [x] pytest (first tests)
+- [x] structlog
 - [x] subprocess
 
 ### Python Mini Projects (Must complete all 10)
-- [ ] #1 System info reporter (CPU, memory, disk)
-- [ ] #2 File organiser (by extension)
+- [x] #1 System info reporter (CPU, memory, disk)
+- [x] #2 File organiser (by extension)
 - [x] #3 Weather CLI (free API)
-- [ ] #4 CSV data cleaner
-- [ ] #5 Simple web scraper
+- [x] #4 CSV data cleaner
+- [] #5 Simple web scraper
 - [ ] #6 Password generator CLI
-- [ ] #7 Log parser + report
-- [ ] #8 GitHub repo lister (API)
+- [x] #7 Log parser + report
+- [x] #8 GitHub repo lister (API)
 - [ ] #9 Expense tracker (CSV)
 - [ ] #10 Automated file backup
 
