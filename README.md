@@ -9,8 +9,8 @@
 
 | Phase | Status | Progress |
 |-------|--------|----------|
-| 0 - Foundation & Mindset | 🟢 Almost Done | 15/16 |
-| 0.5 - Python Foundations | 🟡 In Progress | 10/30 |
+| 0 - Foundation & Mindset | 🟢 Almost Done | 16/16 |
+| 0.5 - Python Foundations | 🟡 In Progress | 30/30 |
 | 1 - Linux & Bash | ⚪ Not Started | 0/26 |
 | 2 - Containers, GPU & Observability | ⚪ Not Started | 0/28 |
 | 3 - Programming Deep Dive | ⚪ Not Started | 0/40 |
@@ -29,24 +29,6 @@
 > Update this section every day or at least every Sunday.
 
 ### Current Week: [Week Number] (Date range)
-
-**Focus this week:**  
-**Hours logged this week:**  
-
-| Day | Date | Hours | What I did | Status |
-|-----|------|-------|------------|--------|
-| Mon |      |       |            |        |
-| Tue |      |       |            |        |
-| Wed |      |       |            |        |
-| Thu |      |       |            |        |
-| Fri |      |       |            |        |
-| Sat |      |       |            |        |
-| Sun |      |       | Review + Plan next week |        |
-
-**Weekly Wins:**  
-**Blockers / Notes:**  
-
----
 
 ## Phase 0 – Foundation & Mindset (Days 1–15)
 **Status:** Almost complete
